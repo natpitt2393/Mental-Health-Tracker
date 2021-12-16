@@ -46,3 +46,4 @@ Diary.init(
 );
 
 module.exports = Diary;
+
