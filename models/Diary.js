@@ -11,6 +11,11 @@ Diary.init(
             primaryKey: true,
             autoIncrement: true
         },
+        date_created: {
+            type: DataTypes.STRING,
+            allowsNull: false,
+            unique: true
+        },
         title: {
             type: DataTypes.STRING(50),
             allowNull: false,
@@ -19,12 +24,8 @@ Diary.init(
             type: DataTypes.STRING(1000),
             allowNull: false
         },
-        mood: {
+        mood_id: {
             type: DataTypes.STRING(30),
-            allowsNull: false
-        },
-        date_created: {
-            type: DataTypes.STRING,
             allowsNull: false
         },
         user_id: {
