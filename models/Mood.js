@@ -35,5 +35,4 @@ Mood.init(
         modelName: 'mood',
       }
 );
-
 module.exports = Mood;
