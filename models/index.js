@@ -6,7 +6,7 @@ User.hasMany(Diary, {
   onDelete: 'CASCADE'
 });
 
-Diaries.belongsTo(User, {
+Diary.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
