@@ -4,7 +4,6 @@
 //test
 
 const router = require('express').Router();
-const { application } = require('express');
 const { Diary, Mood, User } = require('../..models');
 
 // GET all Diary
