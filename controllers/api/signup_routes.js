@@ -1,8 +1,7 @@
-// one route to submit login data POST /api/login
 const router = require('express').Router();
 const User = require('../../models/User.js');
 
-// localhost:3001/api/login
+//localhost:3001/api/signup
 router.post('/', async (req, res) => {
     const userData = await User.create(req.body);
   
