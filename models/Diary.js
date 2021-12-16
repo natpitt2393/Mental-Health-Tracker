@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
-const { Diaries } = require('.');
+const { Diary } = require('.');
 const sequelize = require('../config/connection');
 
-class Diaries extends Model {}
+class Diary extends Model {}
 
-Diaries.init(
+Diary.init(
   {
     id: {
       type: DataTypes.INTEGER,
