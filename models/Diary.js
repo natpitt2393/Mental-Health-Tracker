@@ -27,7 +27,6 @@ Diary.init(
             type: DataTypes.STRING,
             allowsNull: false
         },
-        //Ken, you'll have to explain what you want the date_sorted column to do, because I'm confused about that right now
         user_id: {
             type: DataTypes.INTEGER,
             references: {
