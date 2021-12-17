@@ -1,6 +1,6 @@
 const router = require('express').Router();
-
-const signupRoutes = require('/signup_routes');
+//test
+const signupRoutes = require('./signup_routes');
 const diaryRoutes = require('./diary_routes');
 const loginRoutes = require('./login_routes');
 

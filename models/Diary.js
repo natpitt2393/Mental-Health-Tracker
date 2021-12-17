@@ -25,7 +25,7 @@ Diary.init(
             allowNull: false
         },
         mood_id: {
-            type: DataTypes.INT,
+            type: DataTypes.INTEGER,
             allowsNull: false
         },
         user_id: {
