@@ -14,7 +14,7 @@ Diary.init(
         date_created: {
             type: DataTypes.STRING,
             allowsNull: false,
-            unique: true
+            //i think we should not make this a unique field
         },
         title: {
             type: DataTypes.STRING(50),
@@ -25,7 +25,7 @@ Diary.init(
             allowNull: false
         },
         mood_id: {
-            type: DataTypes.STRING(30),
+            type: DataTypes.INT,
             allowsNull: false
         },
         user_id: {

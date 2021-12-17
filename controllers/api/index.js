@@ -1,4 +1,3 @@
-
 const router = require('express').Router();
 
 const signupRoutes = require('/signup_routes');
