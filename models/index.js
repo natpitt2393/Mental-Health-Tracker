@@ -1,13 +1,23 @@
 const User = require('./User');
-const Diaries = require('./Diaries');
+const Diary = require('./Diary');
+const Mood = require('./Mood');
 
-User.hasMany(Diaries, {
+User.hasMany(Diary, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
-Diaries.belongsTo(User, {
+Diary.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Diaries };
+// diary hasone mood or mood belongs to diary
+Diary.hasOne(Mood, {
+    foreignKey: 'mood_id'
+});
+
+Mood.belongsTo(Diary, {
+    foreignKey: 'mood_id'
+});
+
+module.exports = { User, Diary, Mood };
