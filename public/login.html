@@ -13,15 +13,19 @@
   </head>
 
   <body>
-    <div class="container">
-      <div style="margin-top: 0px;" class="jumbotron text-center">
-        <h1 class="display1">Mental Health Tracker <span role="img" aria-label="Memo">💚</span></h1>
-        <h4>Login Page</h4>
+    <div style="margin-top: 0px;" class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-4">Mental Health Tracker <span role="img" aria-label="Memo">💚</span></h1>
+        <p class="lead">Your journey to a better mental state</p>
+        <hr class="my-4">
       </div>
     </div>
-      <div class="login">
+      <div class="login"> <!--Log in info-->
+        
       <form>
+        <div class ="login-container">
         <div class="form-group">
+          <h3> Log in</h3>
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
@@ -29,13 +33,16 @@
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button style="margin-bottom: 10px;"type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
-    <div class="signup">
+  </div>
+    <div class="signup"> <!--Sign up info-->
       <form>
+        <div class ="signup-container">
         <div class="form-group">
           <div class="form-group">
+            <h3> Sign up</h3>
             <label for="first_name">First Name</label>
             <input type="text" class="form-control" id="first_name" placeholder="First Name">
           </div>
@@ -50,9 +57,9 @@
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-    
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+      </div>
     </div>
 
     <script src="./assets/js/index.js"></script>
