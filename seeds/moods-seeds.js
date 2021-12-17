@@ -2,62 +2,52 @@ const Mood = require('../models/Mood');
 
 const moodData = [
   {
-    id: 1,
-    title: 'worst day ever',
+    title: 'Worst Day Ever',
     value: 1,
     color: "black"
   },
   {
-    id: 2,
-    title: 'really bad',
+    title: 'Really bad',
     value: 2,
     color: "darkred"
   },
   {
-    id: 3,
     title: 'sad',
     value: 3,
     color: 'red'
   },
   {
-    id: 4,
-    title: 'not good',
+    title: 'Not Good',
     value: 4,
     color: 'orange'
   },
   {
-    id: 5,
-    title: 'fine',
+    title: 'Adequate',
     value: 5,
     color: 'yellow'
   },
   {
-      id: 6,
-      title: 'pretty good',
+      title: 'Pretty Good',
       value: 6,
       color: "darkgreen"
   },
   {
-      id: 7,
-      title: "good",
+      title: "Good",
       value: 7,
       color: "green"
   },
   {
-      id: 8,
-      title: "happy",
+      title: "Happy",
       value: 8,
       color: "light green"
   },
   {
-      id: 9,
-      title: "elated",
+      title: "Elated",
       value: 9,
       color: 'neon green'
   },
   {
-      id: 10,
-      title: 'best day ever',
+      title: 'Best Day Ever',
       value: 10,
       color: 'pink'
   }

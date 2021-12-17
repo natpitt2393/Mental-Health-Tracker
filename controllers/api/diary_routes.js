@@ -3,7 +3,7 @@
 // one route to submit a single entry POST /api/diary
 
 const router = require('express').Router();
-const { Diary, Mood, User } = require('../..models');
+const { Diary, Mood, User } = require('../../models');
 
 // GET all Diary
 // localhost:3001/api/diary
