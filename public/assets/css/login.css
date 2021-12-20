@@ -1,24 +1,29 @@
+body{
+    background-color: #ecf0f1;
+}
+.main-content{
+    display: flex;
+    justify-content: space-evenly;
+}
 /*Bootstrap*/
-.login{
+/* .login{
     display: flex;
     justify-content: center;
-}
+} */
 .login form{
     width: 25%;
-    margin-top: 0%;
 }
 /*Bootstrap*/
-.signup{
+/* .signup{
     display: flex;
     justify-content: center;
-}
+} */
 .signup form{
     width: 25%;
-    margin-top: 2.5%;
 }
 .login-container{
     width: 280.75px;
-    border: 1px solid blue;
+    border: 1px solid #7777d1;
     padding: 10px;
 }
 .signup-container{
