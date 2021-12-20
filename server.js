@@ -18,9 +18,9 @@ const sess = {
   saveUninitialized: true,
 
   //later comment out next 3 lines
-  store: new SequelizeStore({
-    db: sequelize
-  })
+  // store: new SequelizeStore({
+  //   db: sequelize
+  // })
 };
 
 app.use(session(sess));
@@ -30,6 +30,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+app.use((req, res, next) => {
+  console.log(`****** ${req.method} request on endpoint: ${req.url}`);
+  next();
+})
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
