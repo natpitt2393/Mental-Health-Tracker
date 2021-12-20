@@ -12,12 +12,12 @@ Diary.belongsTo(User, {
 });
 
 // diary hasone mood or mood belongs to diary
-Diary.hasOne(Mood, {
+Diary.belongsTo(Mood, {
     foreignKey: 'mood_id'
 });
 
-//Mood.belongsTo(Diary, {
-  //  foreignKey: 'mood_id'
-//});
+Mood.hasOne(Diary, {
+   foreignKey: 'mood_id'
+});
 
 module.exports = { User, Diary, Mood };
