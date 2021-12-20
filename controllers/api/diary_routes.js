@@ -5,6 +5,8 @@
 const router = require('express').Router();
 const { Diary, Mood, User } = require('../../models');
 
+const withAuth = require('../../utils/auth');
+
 // GET all Diary
 // localhost:3001/api/diary
 router.get('/', async (req, res) => {
@@ -18,7 +20,7 @@ router.get('/', async (req, res) => {
   }
 });
 // localhost:3001/api/diary
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     const diaryData = await Diary.create(req.body);
   
     return res.json(diaryData);
@@ -27,9 +29,9 @@ router.post('/', async (req, res) => {
   
   // GET a single Diary
   // localhost:3001/api/diary/id
-  router.get('/:id', async (req, res) => {
+  router.get('/view', withAuth,  async (req, res) => {
     try {
-    const diaryData = await Diary.findByPk(req.params.id, {
+    const diaryData = await Diary.findByPk(req.session.user_id, {
       include: [{ model: Mood }, { model: User }],
     });
 
