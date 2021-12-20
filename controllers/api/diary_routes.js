@@ -28,8 +28,8 @@ router.post('/', withAuth, async (req, res) => {
 
   
   // GET a single Diary
-  // localhost:3001/api/diary/id
-  router.get('/view', withAuth,  async (req, res) => {
+  // localhost:3001/api/diary/view
+  router.get('/view', withAuth,  async (req, res) => {//view is arbitrary could be anything
     try {
     const diaryData = await Diary.findByPk(req.session.user_id, {
       include: [{ model: Mood }, { model: User }],

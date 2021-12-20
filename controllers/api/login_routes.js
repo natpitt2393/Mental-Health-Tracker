@@ -4,7 +4,7 @@ const User = require('../../models/User.js');
 //test
 // localhost:3001/api/login
 // POST user login route
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
       const userData = await User.findOne({ where: { email: req.body.email } });
       if (!userData) {
