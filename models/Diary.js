@@ -26,11 +26,7 @@ Diary.init(
         },
         mood_id: {
             type: DataTypes.INTEGER,
-            allowsNull: false,
-            references : {
-                model: "mood",
-                key: "id"
-            }
+           allowsNull: false
         },
         user_id: {
             type: DataTypes.INTEGER,
