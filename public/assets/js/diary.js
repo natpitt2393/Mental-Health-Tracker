@@ -34,10 +34,15 @@ async function renderDiaryEntries() {
         const entryContainer = document.createElement('div');
         const entryTitle = document.createElement('h2');
         const entryDate = document.createElement('h3');
+        const spanEl = document.createElement('span');
         const mood = entry.mood_id
         // const entryMood 
         entryTitle.textContent = entry.title;
         entryDate.textContent = entry.date_created;
+
+        // on click redirect to single entry
+        spanEl.addEventListener('click', someOtherFunction);//create some function
+
 
 
         switch(mood) {
