@@ -16,8 +16,8 @@ Diary.hasOne(Mood, {
     foreignKey: 'mood_id'
 });
 
-Mood.belongsTo(Diary, {
-    foreignKey: 'mood_id'
-});
+//Mood.belongsTo(Diary, {
+  //  foreignKey: 'mood_id'
+//});
 
 module.exports = { User, Diary, Mood };
