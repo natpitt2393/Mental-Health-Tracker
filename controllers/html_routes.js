@@ -22,6 +22,9 @@ router.get("/login", (req, res) => {
 router.get("/diary", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/dashboard.html"));
 });
+router.get("/view", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/view_entry.html"));
+}); // I dont know if this belongs here
 
 router.get("/submit", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/dashboard.html"));

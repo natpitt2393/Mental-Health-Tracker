@@ -19,6 +19,10 @@
 
 // createDiaryEntry(someText);
 // someText = "Something";
+
+
+
+
 console.log("test");
 async function renderDiaryEntries() {
     const response = await fetch("/api/diary", {
