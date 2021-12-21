@@ -30,6 +30,34 @@ hr{
     gap: 50px;
     font-size: 1.5rem;
 }
+.entryContainer{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+/* width: 30%; */
+background-color: #a9f5a6;
+border: 3px solid black;
+/* margin: 0; */
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 2%;
+}
+.entryTitle{
+margin-top: 5px;
+text-align: center;
+}
+.entryDate{
+
+text-align: center;
+}
+.entryDescription{
+
+padding-left: 10%;
+}
+.entryMood{
+font-size: x-large;
+padding-left: 10%;
+}
 footer{
     position: fixed;
     left: 0;
