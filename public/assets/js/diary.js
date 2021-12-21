@@ -41,7 +41,7 @@ async function renderDiaryEntries() {
         entryDate.textContent = entry.date_created;
 
         // on click redirect to single entry
-        spanEl.addEventListener('click', someOtherFunction);//create some function
+        // spanEl.addEventListener('click', someOtherFunction);//create some function
 
 
 
@@ -63,7 +63,7 @@ async function renderDiaryEntries() {
              //  entryContainer.style.borderColor = "black"
                 break;
             case 5:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid blue"
              //  entryContainer.style.borderColor = "black"
                 break;
             case 6:
@@ -71,7 +71,7 @@ async function renderDiaryEntries() {
              //  entryContainer.style.borderColor = "black"
                 break;
             case 7:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid #purple"
              //  entryContainer.style.borderColor = "black"
                 break;
             case 8:
