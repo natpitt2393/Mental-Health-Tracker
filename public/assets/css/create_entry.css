@@ -1,19 +1,6 @@
 body{
     background-color: #ecf0f1;
 }
-
-/* .diary-list-container{
-    border: 2px solid blue;
-    margin: 0px 20px 0px 20px;
-    width: 400px;
-    justify-content: center;
-}
-.diary-list-container div{
-    border: 1px solid black;
-    margin: 10px 10px 10px 20px;
-    width: 90%;
-    height: 100px;
-} */
 .jumbotron{
     margin-bottom: 0;
     padding-bottom: 0;
