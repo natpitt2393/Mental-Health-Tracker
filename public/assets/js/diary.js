@@ -1,28 +1,3 @@
-// // fetch/api/diary
-
-// //
-
-// // const block_to_insert = document.createElement('div');//creates empty div
-
-// // const elemText = document.createTextNode('this is a div'); // creates text in elemText
-// // elem.appendChild(elemText);// appends elemText to elem
-// // var emptyDiary = document.getElementById('diary-list-container');
-// // emptyDiary.appendChild(block_to_insert);
-// var someText = 'This is text 1';
-// function createDiaryEntry(someParams){
-//     const block_to_insert = document.createElement('div');
-//     var emptyDiary = document.getElementById('diary-list-container');
-//     block_to_insert.innerHTML = someParams;
-//     console.log(block_to_insert);
-//     emptyDiary.appendChild(block_to_insert);
-// }
-
-// createDiaryEntry(someText);
-// someText = "Something";
-
-
-
-
 console.log("test");
 async function renderDiaryEntries() {
     const response = await fetch("/api/diary", {
@@ -30,7 +5,7 @@ async function renderDiaryEntries() {
             "Content-Type": "application/json"
         }
     } )
-
+    
     const entries = await response.json()
     console.log(entries);
     const diaryListContainer = document.querySelector("#diary-list-container");
@@ -43,9 +18,11 @@ async function renderDiaryEntries() {
         // const entryMood 
         entryTitle.textContent = entry.title;
         entryDate.textContent = entry.date_created;
+        //add eventListenter on entryContainer
+        //on click get id and put into fetch call to get single diary
+        // entryContainer.addEventListener('click', getSingleEntry);
+        
 
-        // on click redirect to single entry
-        // spanEl.addEventListener('click', someOtherFunction);//create some function
 
 
 
@@ -75,7 +52,7 @@ async function renderDiaryEntries() {
              //  entryContainer.style.borderColor = "black"
                 break;
             case 7:
-                entryContainer.style.border = "5px solid #purple"
+                entryContainer.style.border = "5px solid purple"
              //  entryContainer.style.borderColor = "black"
                 break;
             case 8:

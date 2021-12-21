@@ -12,7 +12,7 @@ const moodData = [
     color: "darkred"
   },
   {
-    title: 'sad',
+    title: 'Sad',
     value: 3,
     color: 'red'
   },
