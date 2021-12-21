@@ -24,17 +24,17 @@ Diary.init(
             type: DataTypes.STRING(1000),
             allowNull: false
         },
-        // mood_id: {
-        //     type: DataTypes.INTEGER,
-        //    allowsNull: false
-        // },
-        // user_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: 'user',
-        //         key: 'id'
-        //     },
-        // }
+        mood_id: {
+            type: DataTypes.INTEGER,
+           allowsNull: false
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            },
+        }
     },
     {
         sequelize,

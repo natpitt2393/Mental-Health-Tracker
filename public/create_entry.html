@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
-  />
-  <link rel="stylesheet" href="./assets/css/create_entry.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/create_entry.css" />
     <title>Create Entry</title>
-</head>
-<body>
-  <div class="jumbotron text-center">
-    <div class="container">
-      <h1 class="display-4">
-        Mental Health Tracker <span role="img" aria-label="Memo">💚</span>
-        <div class="logout-btn"> <a href="/logout">Logout</a></div>
-      </h1>
-      <p class="lead">Your journey to a better mental state</p>
-      <hr />
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">
+          Mental Health Tracker <span role="img" aria-label="Memo">💚</span>
+          <div class="logout-btn"><a href="/logout">Logout</a></div>
+        </h1>
+        <p class="lead">Your journey to a better mental state</p>
+        <hr />
+      </div>
     </div>
-  </div>
-  <!--End Jumbotron div-->
-
-  
-
-  <!-- Begin Footer -->
-  <footer class="bg-light text-center text-lg-start">
-
-    <div class="text-center p-3 author-links">
-      Created by:
-      <a href="https://github.com/Dominiscus1">Anthony</a>
-      <a href="https://github.com/kencford">Ken</a>
-      <a href="https://github.com/natpitt2393">Nat</a>
-      <a href="https://github.com/trealtye20">Tyrese</a>
+    <!--End Jumbotron div-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-nav mx-auto navbar-container">
+          <a
+            class="nav-link navbar-elements"
+            href="#"
+            >Home</a
+          >
+          <a class="nav-link active navbar-elements"aria-current="page" href="#">New Diary</a>
+          <a class="nav-link navbar-elements" href="#">View Diaries</a>
+        </div>
+      </div>
+    </nav> <!--End Navbar-->
+    <form id="form-id"> <!--Begin Form-->
+    <div class="form-group">
+      <label for="text-area"></label>
+      <textarea class="form-control" id="text-area" rows="12" 
+      placeholder="Enter mood description here"></textarea>
     </div>
-  </footer>
+    <button type="submit" class="btn btn-primary">Create Entry</button>
+  </form><!--End Form-->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-</body>
+    <!-- Begin Footer -->
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3 author-links">
+        Created by:
+        <a href="https://github.com/Dominiscus1">Anthony</a>
+        <a href="https://github.com/kencford">Ken</a>
+        <a href="https://github.com/natpitt2393">Nat</a>
+        <a href="https://github.com/trealtye20">Tyrese</a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/create_entry.js"></script>
+  </body>
 </html>
