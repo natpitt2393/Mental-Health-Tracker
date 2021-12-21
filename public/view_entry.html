@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
-  />
-  <link rel="stylesheet" href="./assets/css/view_entry.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/view_entry.css" />
     <title>View Diary Entry</title>
-</head>
-<body>
-  <div class="jumbotron text-center">
-    <div class="container">
-      <h1 class="display-4">
-        Mental Health Tracker <span role="img" aria-label="Memo">💚</span>
-        <div class="logout-btn"> <a href="/logout">Logout</a></div>
-      </h1>
-      <p class="lead">Your journey to a better mental state</p>
-      <hr />
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">
+          Mental Health Tracker <span role="img" aria-label="Memo">💚</span>
+          <div class="logout-btn"><a href="/logout">Logout</a></div>
+        </h1>
+        <p class="lead">Your journey to a better mental state</p>
+        <hr />
+      </div>
     </div>
-  </div>
-  <!--End Jumbotron div-->
+    <!--End Jumbotron div-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-nav mx-auto navbar-container">
+          <a
+            class="nav-link navbar-elements"
+            href="#"
+            >Home</a
+          >
+          <!-- add a logout a tag href in nav bar href="/logout" -->
+          <a class="nav-link navbar-elements" href="#">New Diary</a>
+          <a class="nav-link active navbar-elements"aria-current="page" href="#">View Diaries</a>
+          <!-- <a class="nav-link link-fonts" href="#">Pricing</a> -->
+        </div>
+      </div>
+    </nav>
 
-  <div class="card" id="diary-container">
-    
-  </div>
+    <div id="diary-container"></div>
 
-
-  <!-- Beginning of footer -->
-  <footer class="bg-light text-center text-lg-start">
-
-    <div class="text-center p-3 author-links">
-      Created by:
-      <a href="https://github.com/Dominiscus1">Anthony</a>
-      <a href="https://github.com/kencford">Ken</a>
-      <a href="https://github.com/natpitt2393">Nat</a>
-      <a href="https://github.com/trealtye20">Tyrese</a>
-    </div>
-  </footer>
-
-  <script src="./assets/js/view_entry.js"></script>
-</body>
+    <!-- Beginning of footer -->
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3 author-links">
+        Created by:
+        <a href="https://github.com/Dominiscus1">Anthony</a>
+        <a href="https://github.com/kencford">Ken</a>
+        <a href="https://github.com/natpitt2393">Nat</a>
+        <a href="https://github.com/trealtye20">Tyrese</a>
+      </div>
+    </footer>
+    <script src="./assets/js/view_entry.js"></script>
+  </body>
 </html>

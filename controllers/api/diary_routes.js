@@ -9,10 +9,15 @@ const withAuth = require('../../utils/auth');
 
 // GET all Diary
 // localhost:3001/api/diary
-router.get('/', async (req, res) => {
+router.get('/',withAuth, async (req, res) => {
+  console.log("GET /api/diary");
+  console.log(req.session.id);
   try {
     const diaryData = await Diary.findAll({
-      include: [{ model: Mood }, { model: User }],
+      where: {
+        user_id: req.session.user_id,
+      },
+      // include: [{ model: Mood }, { model: User }],
     });
     res.status(200).json(diaryData);
   } catch (err) {
@@ -28,10 +33,10 @@ router.post('/', withAuth, async (req, res) => {
 
   
   // GET a single Diary
-  // localhost:3001/api/diary/view
-  router.get('/view', withAuth,  async (req, res) => {//view is arbitrary could be anything
+  // localhost:3001/api/diary/:id
+  router.get('/:id', withAuth,  async (req, res) => {//view is arbitrary could be anything
     try {
-    const diaryData = await Diary.findByPk(req.session.user_id, {
+    const diaryData = await Diary.findByPk(req.params.id, {
       include: [{ model: Mood }, { model: User }],
     });
 

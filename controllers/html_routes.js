@@ -26,6 +26,10 @@ router.get("/view", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/view_entry.html"));
 }); // I dont know if this belongs here
 
+router.get("/create", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/create_entry.html"));
+});
+
 router.get("/submit", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/dashboard.html"));
 });
@@ -35,7 +39,8 @@ router.get("/logout", (req, res) => {
   console.log("GET /logout");
   if (req.session.logged_in) {
     req.session.destroy(() => {
-      res.status(204).end();
+      res.redirect("/login");
+      // res.status(204).end();
     });
   } else {
     res.status(404).end();
