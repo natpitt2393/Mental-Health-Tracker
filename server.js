@@ -36,6 +36,15 @@ app.use((req, res, next) => {
 })
 app.use(routes);
 
+var dt = new Date();
+var mm = dt.getMonth().toString().padStart(2, '0');
+var dd = dt.getDay().toString().padStart(2, '0');
+var yyyy = dt.getFullYear();
+
+console.log(yyyy+"-"+mm+"-"+dd);
+
+
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
