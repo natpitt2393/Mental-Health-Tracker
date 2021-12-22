@@ -31,55 +31,47 @@ async function renderDiaryEntry() {
         
         switch(entry.mood_id) {
             case 1:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid black"
                 entryMood.textContent = 'Worst Day Ever';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 2:
-                entryContainer.style.border = "5px solid green"
+                entryContainer.style.border = "5px solid darkred"
                 entryMood.textContent = 'Really bad';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 3:
                 entryContainer.style.border = "5px solid red"
                 entryMood.textContent = 'Sad';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 4:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid orange"
                 entryMood.textContent = 'Not Good';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 5:
-                entryContainer.style.border = "5px solid blue"
+                entryContainer.style.border = "5px solid yellow"
                 entryMood.textContent = 'Adequate';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 6:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid darkgreen"
                 entryMood.textContent = 'Pretty Good';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 7:
-                entryContainer.style.border = "5px solid #purple"
+                entryContainer.style.border = "5px solid green"
                 entryMood.textContent = 'Good';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 8:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid lightgreen"
                 entryMood.textContent = 'Happy';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 9:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid #a9ff29"
                 entryMood.textContent = 'Elated';
-             //  entryContainer.style.borderColor = "black"
                 break;
             case 10:
-                entryContainer.style.border = "5px solid #0c0c"
+                entryContainer.style.border = "5px solid pink"
                 entryMood.textContent = 'Best Day Ever';
-             //  entryContainer.style.borderColor = "black"
                 break;
+            default:
+                entryContainer.style.border = "5px solid white"
         }
         entryContainer.append(entryTitle);
         entryContainer.append(entryDate);

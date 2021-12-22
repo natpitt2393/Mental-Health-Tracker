@@ -18,6 +18,10 @@ body{
     display: flex;
     justify-content: center;
 } */
+img{
+    height: 280px;
+    width: 280px;
+}
 .signup form{
     width: 25%;
 }

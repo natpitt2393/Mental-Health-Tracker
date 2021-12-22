@@ -30,6 +30,9 @@ hr{
     gap: 50px;
     font-size: 1.5rem;
 }
+#diary-container{
+    margin-bottom: 100px;
+}
 .entryContainer{
 display: flex;
 flex-direction: column;
@@ -47,16 +50,18 @@ margin-top: 5px;
 text-align: center;
 }
 .entryDate{
-
+margin-bottom: 0;
+font-size: large;
 text-align: center;
 }
 .entryDescription{
-
+font-size: large;
 padding-left: 10%;
+padding-right: 10%;
 }
 .entryMood{
+text-align: center;
 font-size: x-large;
-padding-left: 10%;
 }
 footer{
     position: fixed;
@@ -70,5 +75,4 @@ footer{
     justify-content: center;
     gap: 20px;
     font-size: 20px;
-    
 }

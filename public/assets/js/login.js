@@ -47,6 +47,6 @@ async function singUpFunc(event) {
       const resData = await response.json();
     }
   }
-  const signupSubmitForm = document.getElementById("signup-submit");
+  const signupSubmitForm = document.getElementById("signup-submit");//targets our form in html
   console.log(signupSubmitForm);
 signupSubmitForm.addEventListener("submit", singUpFunc);
