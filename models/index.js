@@ -6,12 +6,6 @@ User.hasMany(Diary, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
-
-// Diary.belongsTo(User, {
-//   foreignKey: 'user_id'
-// });
-
-// diary hasone mood or mood belongs to diary
 Diary.belongsTo(Mood, {
     foreignKey: 'mood_id'
 });

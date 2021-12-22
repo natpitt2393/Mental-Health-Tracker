@@ -5,12 +5,12 @@ const sequelize = require("../config/connection");
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
-  console.log("**********DATABASE SYNCED ************");
+  // console.log("**********DATABASE SYNCED ************");
   await seedUsers();
   await seedMoods();
-  console.log("*************MOODS SYNCED**********");
+  // console.log("*************MOODS SYNCED**********");
   await seedDiary();
-  console.log("************** DIARY SEEDED");
+  // console.log("************** DIARY SEEDED");
   process.exit(0);
 };
 

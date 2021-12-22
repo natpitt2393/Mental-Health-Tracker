@@ -1,5 +1,4 @@
 const Mood = require('../models/Mood');
-//test
 const moodData = [
   {
     title: 'Worst Day Ever',
@@ -7,7 +6,7 @@ const moodData = [
     color: "black"
   },
   {
-    title: 'Really bad',
+    title: 'Really Bad',
     value: 2,
     color: "darkred"
   },

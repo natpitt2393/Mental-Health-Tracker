@@ -1,7 +1,3 @@
-// one route to get all diary entries GET /api/diary
-//one route to get a single entry GET /api/diary/:id
-// one route to submit a single entry POST /api/diary
-//test
 const router = require('express').Router();
 const { Diary, Mood, User } = require('../../models');
 
@@ -10,14 +6,13 @@ const withAuth = require('../../utils/auth');
 // GET all Diary
 // localhost:3001/api/diary
 router.get('/',withAuth, async (req, res) => {
-  console.log("GET /api/diary");
-  console.log(req.session.id);
+  // console.log("GET /api/diary");
+  // console.log(req.session.id);
   try {
     const diaryData = await Diary.findAll({
       where: {
         user_id: req.session.user_id,
       },
-      // include: [{ model: Mood }, { model: User }],
     });
     res.status(200).json(diaryData);
   } catch (err) {
