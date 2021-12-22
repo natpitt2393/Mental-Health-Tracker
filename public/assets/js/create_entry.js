@@ -9,6 +9,8 @@ var dateStr = mm+"-"+dd+"-"+yyyy;
 // console.log(yyyy);
 // console.log(mm+"-"+dd+"-"+yyyy);
 // console.log(dateStr);
+const success = document.getElementById("success")
+success.textContent = "";
 
 async function createDescriptionFunc(event) {
     event.preventDefault();
@@ -32,6 +34,7 @@ async function createDescriptionFunc(event) {
     });
     if (response.ok) {
     // console.log("entry added");
+      success.textContent = "Your entry has been successfully added!";
     } else {
       const resData = await response.json();
     }
