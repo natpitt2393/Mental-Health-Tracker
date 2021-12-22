@@ -28,22 +28,43 @@
         <div class="navbar-nav mx-auto navbar-container">
           <a
             class="nav-link navbar-elements"
-            href="#"
+            href="/diary"
             >Home</a
           >
-          <a class="nav-link active navbar-elements"aria-current="page" href="#">New Diary</a>
-          <a class="nav-link navbar-elements" href="#">View Diaries</a>
+          <a class="nav-link active navbar-elements"aria-current="page" href="/create">New Diary</a>
+          <a class="nav-link navbar-elements" href="/view">View Diaries</a>
         </div>
       </div>
     </nav> <!--End Navbar-->
-    <form id="form-id"> <!--Begin Form-->
+    <!-- Begin dropdown -->
+    <label for="mood">How are you feeling?:</label>
+
+    <select name="mood" id="mood">
+      <option value=1>Worst Day Ever</option>
+      <option value=2>Really Bad</option>
+      <option value=3>Sad</option>
+      <option value=4>Not Good</option>
+      <option value=5>Adequate</option>
+      <option value=6>Pretty Good</option>
+      <option value=7>Good</option>
+      <option value=8>Happy</option>
+      <option value=9>Elated</option>
+      <option value=10>Best Day Ever</option>
+    </select>
+    <!-- End dropdown -->
+    <form id="form-title"> <!--begin form title area-->
+      <div class="form-group">
+        <label for="title"></label>
+        <input type="text" class="form-control" id="title" placeholder="Enter Mood Title">
+    </form> <!--End form title area-->
+    <form id="form-description"> <!--Begin text area Form-->
     <div class="form-group">
       <label for="text-area"></label>
       <textarea class="form-control" id="text-area" rows="12" 
       placeholder="Enter mood description here"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Create Entry</button>
-  </form><!--End Form-->
+  </form><!--End text area Form-->
 
     <!-- Begin Footer -->
     <footer class="bg-light text-center text-lg-start">

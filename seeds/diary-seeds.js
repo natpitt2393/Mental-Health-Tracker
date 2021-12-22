@@ -1,5 +1,4 @@
 const Diary = require('../models/Diary');
-//test
 const diaryData = [
   {
     title: 'User 1',

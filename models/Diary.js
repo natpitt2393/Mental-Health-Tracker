@@ -14,7 +14,6 @@ Diary.init(
         date_created: {
             type: DataTypes.STRING,
             allowsNull: false,
-            //i think we should not make this a unique field
         },
         title: {
             type: DataTypes.STRING(50),

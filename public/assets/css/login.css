@@ -5,19 +5,14 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-/*Bootstrap*/
-/* .login{
-    display: flex;
-    justify-content: center;
-} */
 .login form{
     width: 25%;
 }
-/*Bootstrap*/
-/* .signup{
-    display: flex;
-    justify-content: center;
-} */
+
+img{
+    height: 280px;
+    width: 280px;
+}
 .signup form{
     width: 25%;
 }
