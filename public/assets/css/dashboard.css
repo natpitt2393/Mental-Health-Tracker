@@ -1,19 +1,6 @@
 body{
     background-color: #ecf0f1;
 }
-
-/* .diary-list-container{
-    border: 2px solid blue;
-    margin: 0px 20px 0px 20px;
-    width: 400px;
-    justify-content: center;
-}
-.diary-list-container div{
-    border: 1px solid black;
-    margin: 10px 10px 10px 20px;
-    width: 90%;
-    height: 100px;
-} */
 .jumbotron{
     margin-bottom: 0;
     padding-bottom: 0;
@@ -42,6 +29,23 @@ hr{
     justify-content: center;
     gap: 50px;
     font-size: 1.5rem;
+}
+#diary-list-container{
+    display: flex;
+    flex-direction: column;
+}
+#diary-list-container div{
+    margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#diary-list-container div h2{
+    padding: 1%;
+    padding-bottom: 0;
+}
+#diary-list-container div h3{
+    padding: 1%;
+    padding-bottom: 0;
 }
 footer{
     position: fixed;
