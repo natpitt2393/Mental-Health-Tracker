@@ -37,10 +37,10 @@ hr{
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
-/* width: 30%; */
+
 background-color: #a9f5a6;
 border: 3px solid black;
-/* margin: 0; */
+
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 2%;

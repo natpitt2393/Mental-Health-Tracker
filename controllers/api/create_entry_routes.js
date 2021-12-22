@@ -1,10 +1,9 @@
 const router = require("express").Router();
 const Diary = require("../../models/Diary.js");
 const withAuth = require("../../utils/auth.js");
-//test
 //localhost:3001/api/create
 router.post("/", withAuth, async (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   try {
     const diaryData = await Diary.create({
       ...req.body,

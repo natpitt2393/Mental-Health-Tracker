@@ -7,8 +7,7 @@ async function renderDiaryEntry() {
     } )
 
     const entries = await response.json()
-    console.log(entries);
-    // console.log(entry[0]);
+    // console.log(entries);
     const diaryListContainer = document.querySelector("#diary-container");
     entries.forEach((entry)=> {
 
@@ -21,7 +20,6 @@ async function renderDiaryEntry() {
         entryTitle.textContent = entry.title;
         entryDate.textContent = entry.date_created;
         entryDescription.textContent = entry.description;
-        // entryMood.textContent = entry.mood.title;
         
         entryContainer.classList.add("entryContainer");
         entryTitle.classList.add("entryTitle");

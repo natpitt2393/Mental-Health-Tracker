@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
-//test
 const routes = require('./controllers');
 
 const sequelize = require('./config/connection');
@@ -16,11 +15,6 @@ const sess = {
   cookie: {},
   resave: false,
   saveUninitialized: true,
-
-  //later comment out next 3 lines
-  // store: new SequelizeStore({
-  //   db: sequelize
-  // })
 };
 
 app.use(session(sess));
@@ -31,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.use((req, res, next) => {
-  console.log(`****** ${req.method} request on endpoint: ${req.url}`);
+  // console.log(`****** ${req.method} request on endpoint: ${req.url}`);
   next();
 })
 app.use(routes);

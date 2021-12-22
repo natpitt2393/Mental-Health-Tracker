@@ -1,5 +1,4 @@
 const Mood = require('../models/Mood');
-//test
 const moodData = [
   {
     title: 'Worst Day Ever',
