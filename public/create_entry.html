@@ -37,7 +37,9 @@
       </div>
     </nav> <!--End Navbar-->
     <!-- Begin dropdown -->
-    <label for="mood">How are you feeling?:</label>
+    <div id="entry-form-container">
+    <div id="entry-form"> <!--entry-form-->
+    <label for="mood">How are you feeling?</label>
 
     <select name="mood" id="mood">
       <option value=1>Worst Day Ever</option>
@@ -65,7 +67,9 @@
     </div>
     <button type="submit" class="btn btn-primary">Create Entry</button>
   </form><!--End text area Form-->
-
+  <p id="success"></p>
+</div> <!--Entry-form -->
+</div>
     <!-- Begin Footer -->
     <footer class="bg-light text-center text-lg-start">
       <div class="text-center p-3 author-links">
