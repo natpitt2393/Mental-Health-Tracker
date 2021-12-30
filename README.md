@@ -8,6 +8,7 @@ This application allows diary entries that track daily moods. Views are provided
 - [Test Instructions](#test-instructions)
 - [License](#license)
 - [Questions](#questions)
+- [Media](#media)
 ## Installation Instructions
 All folders and files are found on our Github repository. It is designed to work in conjunction with NODE and MySQL.
 ## Usage Information
@@ -19,5 +20,9 @@ N/A
 ## License
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Questions
+![Mental-Health-Tracker](./public/assets/images/ViewAll.png)
+![Mental-Health-Tracker](./public/assets/images/Create.png)
+![Mental-Health-Tracker](./public/assets/images/Main.png)
+![napitt2393/Mental-Health-Tracker](https://github.com/natpitt2393/Mental-Health-Tracker)
 ### Github account: www.github.com/natpitt2393
-### Email: Nat@email.com
+### Email: nathaniel.epstein@gmail.com
